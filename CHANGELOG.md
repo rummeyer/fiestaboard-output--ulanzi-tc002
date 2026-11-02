@@ -1,11 +1,21 @@
 # Changelog
 
-## 0.3.0 (unreleased)
+## 0.3.0 — 2026-11-02
 
-- Optional clock-owned timed collections with per-page apps, button/API selection, focus-preserving refresh and selected-page feedback on FiestaBoard 10.3.0.
-- Preserve TC002 native-size layout rendering and 52x17 virtual-frame compression.
-- Optional validated device-wide transition controls; defaults leave device settings unchanged.
-- Recover missing apps and interrupted ordering while preserving foreign apps.
+Contributed by Jeffrey D Johnson (#1).
+
+- **Native rotation**, optional and off by default: a collection's timed pages
+  become apps of their own on the clock, which rotates them itself. Pages can
+  be picked with the clock's buttons or the API, a refresh keeps the page on
+  show, and lost apps or an interrupted order are put back. Other apps on the
+  clock, their order and the disabled ones are left as they are. Needs
+  FiestaBoard 10.3.0 or later.
+- **Clock transitions**, optional: the clock's own transition effect,
+  direction, duration and automatic rotation can be set. Left unset, the
+  clock keeps its settings; these apply to every app on the clock.
+- **Full-colour 52 x 16 frames** for FiestaBoard's flexible JSON pages, once a
+  FiestaBoard release has them (FiestaBoard PR #2395). Older versions are not
+  affected.
 
 ## 0.2.1 — 2026-11-01
 
